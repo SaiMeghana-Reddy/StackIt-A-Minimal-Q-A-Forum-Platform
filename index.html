@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StackIt - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">StackIt</a>
+      <div class="nav-right">
+        <button id="loginBtn" onclick="window.location.href='login.html'" class="btn">Login</button>
+        <button class="btn" onclick="window.location.href='ask.html'">Ask New Question</button>
+        <select id="filter" class="filter-select">
+          <option value="newest">Newest</option>
+          <option value="unanswered">Unanswered</option>
+          <option value="more">More ▼</option>
+        </select>
+        <div class="search-bar">
+          <input type="text" placeholder="Search questions..." />
+          <span class="search-icon">🔍</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="question-list">
+      <div class="question-card" onclick="window.location.href='question.html'">
+        <h2>How to join 2 columns in SQL?</h2>
+        <p>Need help understanding how to combine two columns from different tables...</p>
+        <div class="tags">
+          <span class="tag tag-sql">SQL</span>
+          <span class="tag tag-database">Database</span>
+        </div>
+        <div class="question-meta">
+          <span class="user">Alice</span>
+          <span class="answer-count">3 Answers</span>
+        </div>
+      </div>
+      <div class="question-card" onclick="window.location.href='question.html'">
+        <h2>Best way to optimize React app?</h2>
+        <p>Looking for tips to improve performance in a React project...</p>
+        <div class="tags">
+          <span class="tag tag-react">React</span>
+          <span class="tag tag-javascript">JavaScript</span>
+        </div>
+        <div class="question-meta">
+          <span class="user">Bob</span>
+          <span class="answer-count">1 Answer</span>
+        </div>
+      </div>
+    </div>
+    <div class="pagination">
+      <a href="#" class="page active">1</a>
+      <a href="#" class="page">2</a>
+      <a href="#" class="page">3</a>
+      <span>...</span>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
